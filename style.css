@@ -129,7 +129,7 @@ img{
     fill: var(--brand-light);
 }
 
-nav .logo svg path[fill="#00856F"],
+nav .logo path[fill="#00856F"],
 #backToTop circle{
     fill: var(--primary-color);
 }
@@ -270,7 +270,7 @@ body.menu-expanded button{
     position: relative;
     z-index: 100;
 }
-body.menu-expanded .logo path[fill="#00856F"],
+
 body.menu-expanded .logo path{
     fill: #fff;
 }
