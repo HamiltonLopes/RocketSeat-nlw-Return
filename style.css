@@ -7,7 +7,7 @@
 :root{
     font-size: 62.5%; /*1rem = 10px*/
 
-    --hue: 290;
+    --hue: 190;
     --primary-color: hsl(var(--hue), 100%, 26%);
     --secondary-color-headline: hsl(210, 11%, 15%);
     --secondary-color-paragraph: hsl(210, 9%, 31%);
@@ -503,3 +503,4 @@ footer .social-links{
 /* code 1: #NextLevel*/
 /* code 2: #NeverStopLearning */
 /* code 3: #NewSkills */
+/* code 4: #SetpByStep */
