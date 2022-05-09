@@ -580,9 +580,10 @@ footer .social-links{
         font-size: 1.6rem;
         color: var(--primary-color);
         opacity: 0.7;
-        transition: opacity 0.4s;
+        transition: opacity 200ms;
     }
 
+    nav#navigation .menu ul li a.active,
     nav#navigation .menu ul li a:hover{
         font-weight: 700;
         opacity: 1;
@@ -603,6 +604,7 @@ footer .social-links{
         transition: width 0.2s;
     }
     
+    nav#navigation .menu li a.active::after,
     nav#navigation .menu li a:hover::after{
         padding-inline: 0.6rem;
         width: 100%;
@@ -630,7 +632,7 @@ footer .social-links{
         color: #fff;
     }
 
-    nav#navigation.scroll .menu ul li a {
+    nav#navigation.scroll .menu ul a {
         color: var(--brand-light2);
         opacity: 0.6;
     }
@@ -639,16 +641,12 @@ footer .social-links{
         background-color: #fff;
     }
 
-    nav#navigation.scroll .menu ul li a:hover{
-        font-weight: 700;
-        opacity: 1;
-    }
-
     nav#navigation.scroll .menu a.button{
         border-color: #fff;
         color: #fff;
     }
 
+    nav#navigation.scroll .menu a.button.active,
     nav#navigation.scroll .menu a.button:hover{
         background-color: var(--primary-color);
         filter: brightness(1.3);
