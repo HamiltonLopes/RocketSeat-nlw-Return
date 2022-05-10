@@ -8,6 +8,7 @@ function onScroll(){
     activateMenuAtCurrentSection(services);
     activateMenuAtCurrentSection(about);
     activateMenuAtCurrentSection(contact);
+    activateMenuAtCurrentSection(testimonials);
 }
 
 function activateMenuAtCurrentSection(section){
@@ -52,26 +53,36 @@ ScrollReveal({
 #about,
 #about header,
 #about .content,
-#contact
+#contact,
+#testimonials,
+#testimonials .header
 `);
 
 const swiper = new Swiper('.swiper', {
     slidesPerView:1,
     keyboard: true,
-
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
-  
     // // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints:{
+        1024:{
+            slidesPerView: 2,
+            setWrapperSize: true
+        }   
     }
-  
   });
+
+  ScrollReveal({
+    distance: '30px',
+    origin: 'left',
+    duration: 800
+}).reveal(`#testimonials .swiper-wrapper`);
