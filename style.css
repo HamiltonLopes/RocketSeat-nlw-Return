@@ -831,10 +831,23 @@ footer .social-links{
 
     .swiper-button-prev{
         display: block;
+        transition: opacity .2s ease-in-out;
+        opacity : 0;
     }
 
+    .swiper:hover .swiper-button-prev{
+        opacity: 1;
+    }
+
+    
     .swiper-button-next{
         display: block;
+        transition: opacity .2s ease-in-out;
+        opacity : 0;
+    }
+
+    .swiper:hover .swiper-button-next{
+        opacity: 1;
     }
 
     /*============================== FOOTER =========================*/
